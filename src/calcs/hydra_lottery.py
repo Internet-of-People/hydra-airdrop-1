@@ -5,7 +5,7 @@ import random # Mersenne Twister
 from collections import OrderedDict
 
 ticket_file = '../data/tickets.json'
-registration_file = '../data/registration_fake.json'    # TODO: use real data!
+registration_file = '../data/registration.json'
 results_file = '../data/lottery_results.json'
 
 # read in ticket count for everyone
