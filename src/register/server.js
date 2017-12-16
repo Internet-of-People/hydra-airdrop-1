@@ -44,7 +44,7 @@ express.post("/register", async (req, res) => {
                 }
                 res.status(200);
                 res.end("You have successfully registered! You have " + Math.min(Math.floor(data[req.body.iop]/2), 250) + " tickets!");
-                mysql.query("INSERT INTO airdropAccs VALUES (?, ?, ?)", [req.body.iop, req.body.eth, req.body.sig], async (err)=>{});
+                mysql.query("INSERT INTO TABLE VALUES (?, ?, ?)", [req.body.iop, req.body.eth, req.body.sig], async (err)=>{});
             });
         } else {
             res.status(400);
