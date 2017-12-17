@@ -3,7 +3,7 @@ First Hydra Airdrop
 
 Dear IOP Community, 
 
-Registration for the first Hydra airdrop will open on Sunday, December 17, 2:00 PM UTC. To give everyone in the community a fair chance to get some Hydra, we are not distributing a fixed amount of Hydra per IOP. 
+Registration for the first Hydra airdrop has opened on Sunday, December 17, 2:00 PM UTC. To give everyone in the community a fair chance to get some Hydra, we are not distributing a fixed amount of Hydra per IOP. 
 
 Instead, we’re running a lottery. 
 
