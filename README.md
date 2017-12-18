@@ -39,13 +39,13 @@ If you still have questions, you should be able to find the answers here.
 **A**: 500,000 Hydra tokens are being distributed in this airdrop.
 
 **Q**: Is everyone eligible to receive free Hydra tokens?
-**A**: No, only IOP addresses containing more than 2 IOP as of block 71417 (Sunday, December 10, 7:00 PM UTC) are eligible for this airdrop. However, more airdrops are planned for the near future, so keep hodling!
+**A**: No, only IOP addresses containing 2 IOP or more as of block 71417 (Sunday, December 10, 7:00 PM UTC) are eligible for this airdrop. However, more airdrops are planned for the near future, so keep hodling!
 
 **Q**: Will every eligible address receive free Hydra tokens?
-**A**: No, tokens will be distributed via a random lottery.
+**A**: No, tokens will be distributed via a random lottery. However, the chance to go empty-handed is almost zero.
 
 **Q**: So everyone has the same chance of receiving tokens?
-**A**: Not exactly. The airdrop is being run as a lottery. You can receive tickets based on the number of IOP tokens you own. IOP holders are eligible for one lottery entry for every 2 IOP they hold, up to a maximum of 250 tickets (per wallet).
+**A**: Not exactly. The airdrop is being run as a lottery. You can receive tickets based on the number of IOP tokens you own. IOP holders are eligible for one lottery entry for every 2 IOP they hold, up to a maximum of 250 tickets (per address).
 
 **Q**: Can I do anything to increase my chances?
 **A**: Not any more. The distribution of tickets will be based on a snapshot of the IoP blockchain taken at block 71417 and is now fixed.
@@ -60,10 +60,11 @@ If you still have questions, you should be able to find the answers here.
 **A**: There are several options, but we recommend MyEtherWallet.com. We have created a short instruction video explaining how to set up a wallet address in MEW.
 
 **Q**: How do I register my address?
-**A**: You can register your address in our official IoP Token telegram channel by messaging our bot.
+**A**: You can register your address in our official IoP Token telegram channel by messaging our bot. The bot also accepts direct messages.
 
 **Q**: The bot says I need a signature. What’s that?
-**A**: We need a cryptographic signature to verify that you own the ETH address you’re trying to register. In your IoP core wallet, select “Sign Message” from the File menu. Paste the eligible IoP address in the top bar and your ETH address in the message box. Click the Sign Message button and the signature will be generated. You can use the Copy button to the right of the signature to copy it to the clipboard.
+**A**: We need a cryptographic signature to verify that you own the IoP address you’re trying to register. In your IoP core wallet, select “Sign Message” from the File menu. Paste the eligible IoP address in the top bar and your ETH address in the message box. Click the Sign Message button and the signature will be generated. You can use the Copy button to the right of the signature to copy it to the clipboard.
 
 **Q**: I’m pretty sure I had an eligible amount of tokens in an eligible IOP address at the time of 71417. However, when I try to register the address with the bot I get a message saying “That IoP address isn't on the list of IoP addresses eligible for this airdrop. Sorry.” Why am i getting that message?
-**A**: First check this list for the address. If it’s not in the list don’t worry it may have been stored in a different address than you think. Go to Help>Debug window>Console tab and enter listaddressgroupings and hit return. In the console window you will see all the addresses that the wallet used for your transactions. Check that list against the first list and you should find the tokens you’re looking for.
+
+**A**: First check [this list](src/data/snapshot.json) for the address. If it’s not in the list, don’t worry. It may have been stored in a different address than you think. Go to *Help->Debug Window->Console*, enter `listaddressgroupings` and hit return. In the console window you will see all the addresses that the wallet used for your transactions. Check that list against the first list and you should find the tokens you’re looking for.
