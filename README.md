@@ -33,7 +33,7 @@ If you still have questions, you should be able to find the answers here.
 **A**: To celebrate the long-standing partnership between IoP and Libertaria, Libertaria is rewarding members of the IoP community with a free gift of Hydra, Libertaria’s new cryptotoken.
 
 **Q**: What is Hydra?
-**A**: Hydra is Libertaria’s new cryptotoken. Eventually it will run on Libertaria’s new Hydra blockchain protocol, but for now it is an ERC20 token on the Ethereum blockchain.
+**A**: Hydra is Libertaria’s new cryptotoken. Eventually it will run on Libertaria’s new Hydra blockchain protocol, but for now it is an ERC20 token on the Ethereum blockchain. The address of the contract is 0xd233495c48eb0143661ffc8458eafc21b633f97f, the Token symbol is **HYD**.
 
 **Q**: How many Hydra tokens are being airdropped?
 **A**: 500,000 Hydra tokens are being distributed in this airdrop.
