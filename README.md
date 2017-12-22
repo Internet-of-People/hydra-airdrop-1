@@ -1,3 +1,11 @@
+UPDATE - Registration closed
+============================
+
+The registration for the Hydra Lottery closed as planned on Friday, December 22, 2:00 PM UTC. Thank you all for participating. After we extract all relevant information from the registration database, we will present the registration data together with the lottery results.
+
+Stay tuned!
+
+
 First Hydra Airdrop
 ===================
 
