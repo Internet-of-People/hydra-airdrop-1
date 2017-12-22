@@ -1,3 +1,17 @@
+UPDATE - Lottery results available
+==================================
+
+Dear everyone in the IoP Community. This is the moment all of you have been waiting for. We have now uploaded both the final registration data and the lottery results. The registration data is found [here](src/data/registration.json) and is sorted by IOP address, so you can easily verify that your addresses have been properly registered. Using the signatures, everyone can verify that all IOP addresses were actually registered by none other than their owner.
+
+The results of the lottery are found [here](src/data/lottery_results.json). These results can also be reproduced by everyone using [this Python3 script](src/data/hydra_lottery.py). We congratulate the owner of the ETH address `0xc61A15639602e0BfD3d79E699001A03b734d179d`, who has won the incredible amount of 15706 HYD (you seem to have a lot of addresses). Everyone else can be happy as the average winning was 2282.23 HYD and no one won less than 7 HYD. The median amount was 2165 HYD.
+
+For everyone interested in the inner workings of our lottery, we give here a short description of the system we are modeling: 
+
+Imagine walking up to a ticket booth for the lottery. A ticket costs 2 IOP, and no one is allowed to buy more than 250 tickets at a time. As a bonus, everyone buying tickets is awarded 1 HYD immediately. Of course, if you come back later with a fake moustache and sunglasses, or buy tickets at another booth, you succesfully tricked the system. Shame on you! On each ticket you buy is written a number, and the tickets are ordered. So if you buy 35 tickets, and your first ticket is no. 439, your last ticket will be no. 473. 
+
+Now comes the day of the lottery drawing and the booths are all closed. For every ticket sold, a corresponding numbered ball is thrown into a big bowl and mixed wildly. Now, a random ball is drawn from the bowl. The owner of the corresponding ticket is awarded 1 HYD (someone writes this down, of course), and the ticket is thrown back into the bowl, which is then again mixed randomly (this rewards participants with fewer IOP, as their chances would shrink dramatically by losing one ticket, while people with hundreds of tickets could care less about one of them). This is repeated for all of the remaining Hydra---remember, a few hundred of the 500k HYD have already been given out to the participants when registering.
+
+
 UPDATE - Registration closed
 ============================
 
