@@ -7,7 +7,6 @@ import random # Mersenne Twister
 raw_file = '../data/airdrop.data'
 snapshot_file = '../data/snapshot.json'
 tickets_file = '../data/tickets.json'
-registration_file = '../data/registration_fake.json'
 
 # read raw snapshot data
 rawData = np.asarray( np.genfromtxt(raw_file, skip_header=6, dtype= None) )
@@ -19,7 +18,6 @@ maximumTickets = 250 # the maximum number of tickets an address can get
 # open empty dicts
 snapshot_data = {}
 tickets_data = {}
-registration_fake = {}
 
 # fill dicts from raw data
 for x in rawData:
@@ -32,19 +30,11 @@ for x in rawData:
         snapshot_data[ address ] = x[0] 
         tickets_data[   address ] = min( tickets, maximumTickets )
 
-        # generate fake registration data
-        if random.randint(0,2) == 1 : # not everyone registers
-            registration_fake[ address ] = "0x"+address+address
-
 
 # output data to json
 with open(snapshot_file, 'w') as outfile:
     json.dump(snapshot_data, outfile, indent=2)
 with open(tickets_file, 'w') as outfile:
     json.dump(tickets_data, outfile, indent=2)
-with open(registration_file, 'w') as outfile:
-    json.dump(registration_fake, outfile, indent=2)
-
-
 
 
