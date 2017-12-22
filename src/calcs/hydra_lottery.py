@@ -37,18 +37,20 @@ for iopAddr, data in registration_data.items():
     nTickets += tickets_data[ iopAddr ]
     participants[ nTickets ] = data[ 'eth' ]  # We use the number as key to the addr.
 
-nParticipants = len(participants)
+
 totalTickets = nTickets
 
-print("{} participants with a total of {} tickets.".format(nParticipants,totalTickets))
 
 # Lottery parameters
 totalHydra = 500000
-lotteryHydra = totalHydra - nParticipants # every address gets one Hydra for registering
-print("Every address is awarded 1 HYD for registering...")
+print("Every participant is awarded 1 HYD for registering...")
 winnings = {}
 for num, part in participants.items():
     winnings[ part ] = 1
+nParticipants = len(winnings)
+print("{} participants with a total of {} tickets.".format(nParticipants,totalTickets))
+
+lotteryHydra = totalHydra - nParticipants # every ETH address for taking part
 print("{} HYD remaining for random distribution".format(lotteryHydra))
 
 # Seed the lottery
