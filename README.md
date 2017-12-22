@@ -3,7 +3,7 @@ UPDATE - Lottery results available
 
 Dear everyone in the IoP Community. This is the moment all of you have been waiting for. We have now uploaded both the final registration data and the lottery results. The registration data is found [here](src/data/registration.json) and is sorted by IOP address, so you can easily verify that your addresses have been properly registered. Using the signatures, everyone can verify that all IOP addresses were actually registered by none other than their owner.
 
-The results of the lottery are found [here](src/data/lottery_results.json). These results can also be reproduced by everyone using [this Python3 script](src/data/hydra_lottery.py). We congratulate the owner of the ETH address `0xc61A15639602e0BfD3d79E699001A03b734d179d`, who has won the incredible amount of 15710 HYD (you seem to have a lot of addresses). Everyone else can be happy as the average winning was 2283.11 HYD and no one won less than 7 HYD. The median amount was 2167 HYD.
+The results of the lottery are found [here](src/data/lottery_results.json). These results can also be reproduced by everyone using [this Python3 script](src/calcs/hydra_lottery.py). We congratulate the owner of the ETH address `0xc61A15639602e0BfD3d79E699001A03b734d179d`, who has won the incredible amount of 15710 HYD (you seem to have a lot of addresses). Everyone else can be happy as the average winning was 2283.11 HYD and no one won less than 7 HYD. The median amount was 2167 HYD.
 
 For everyone interested in the inner workings of our lottery, we give here a short description of the system we are modeling: 
 
