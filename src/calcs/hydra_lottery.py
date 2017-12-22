@@ -43,7 +43,7 @@ totalTickets = nTickets
 print("{} participants with a total of {} tickets.".format(nParticipants,totalTickets))
 
 # Lottery parameters
-totalHydra = 500_000
+totalHydra = 500000
 lotteryHydra = totalHydra - nParticipants # every address gets one Hydra for registering
 print("Every address is awarded 1 HYD for registering...")
 winnings = {}
@@ -57,7 +57,7 @@ random.seed(17052016) # IOP genesis block
 
 print("Drawing {} random integers in the range (1,{})".format(lotteryHydra,totalTickets))
 for i in range(lotteryHydra):
-    if i>0 and i % 100_000 == 0:
+    if i>0 and i % 100000 == 0:
         print("{} Hydra awarded".format(i)) 
 
     winner = random.randint(1,totalTickets) # this is the ticket that won
