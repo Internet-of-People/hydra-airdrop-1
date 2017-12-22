@@ -25,8 +25,7 @@ participants = {}
 
 # assign each participant their tickets and count total tickets
 nTickets = 0
-nParticipants = 0
-for iopAddr, ethAddr in registration_data.items():
+for iopAddr, data in registration_data.items():
     # We will later draw a random rumber in the range (0,totalTickets)
     # We accumulate the ticket number so each participant gets a unique range
     # of ticket numbers. Participant 1 has e.g. 50 tickets, so we assign him 
@@ -36,8 +35,9 @@ for iopAddr, ethAddr in registration_data.items():
     # the one with a value that is larger than or equal to the number drawn in the 
     # lottery, because he must have the ticket in question.
     nTickets += tickets_data[ iopAddr ]
-    participants[ nTickets ] = ethAddr # We use the number as key to the addr.
-    nParticipants += 1
+    participants[ nTickets ] = data[ 'eth' ]  # We use the number as key to the addr.
+
+nParticipants = len(participants)
 totalTickets = nTickets
 
 print("{} participants with a total of {} tickets.".format(nParticipants,totalTickets))
